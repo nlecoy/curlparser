@@ -1,6 +1,6 @@
 # cURL Parser
 
-A library to parse cURL requests to multiple format
+Parse cURL commands returning object representing the request.
 
 ## License
 
