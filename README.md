@@ -31,13 +31,22 @@ $ pipenv install curlparser
 >>> result = curlparser.parse(
     """
     curl \
-      -H 'Accept: application/vnd.github.v3+json' \
+      --header 'Content-Type: application/json' \
+      --request PUT \
+      --user nlecoy:my_password \
+      --data '{"username":"xyz", "password":"xyz"}' \
       https://api.github.com/repos/nlecoy/curlparser
     """
 )
 
 >>> result.url
 'https://api.github.com/repos/nlecoy/curlparser'
+
+>>> result.auth
+('nlecoy', 'my_password')
+
+>>> result.json
+{'username': 'xyz', 'password': 'xyz'}
 ```
 
 ## Available parameters
