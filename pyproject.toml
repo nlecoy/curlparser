@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "curlparser"
+version = "0.1.0"
+description = "A library to parse cURL requests to multiple format"
+authors = ["Nicolas Lecoy <nicolas.lecoy@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/nlecoy/curlparser"
+repository = "https://github.com/nlecoy/curlparser"
+documentation = "https://nlecoy.github.com/curlparser"
+keywords = ['curl', 'parser']
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+black = "^21.5b1"
+flake8 = "^3.9.2"
+isort = "^5.8.0"
+pre-commit = "^2.13.0"
+pytest = "^6.2.4"
+pytest-cov = "^2.12.0"
+pytest-mock = "^3.6.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+include = '\.pyi?$'
+exclude = '''
+/(
+  | \.git
+  | \.github
+  | \.venv
+  | \.vscode
+  | build
+  | dist
+  | docs
+)/
+'''
