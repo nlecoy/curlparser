@@ -4,7 +4,7 @@
     <img src="https://github.com/nlecoy/curlparser/workflows/Tests/badge.svg" alt="Tests">
 </a>
 <a href="https://codecov.io/gh/nlecoy/curlparser" target="_blank">
-    <img src="https://img.shields.io/codecov/c/github/nlecoy/curlparser?color=%2334D058" alt="Coverage">
+    <img src="https://codecov.io/gh/nlecoy/curlparser/branch/main/graph/badge.svg?token=qSvHcn7TGz" alt="Coverage">
 </a>
 <a href="https://pypi.org/project/curlparser" target="_blank">
     <img src="https://img.shields.io/pypi/v/curlparser?color=%2334D058&label=pypi%20package" alt="Package version">
