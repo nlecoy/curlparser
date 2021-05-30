@@ -47,8 +47,11 @@ $ pipenv install curlparser
 - method
 - url
 - auth
+- cookies
 - data
+- json
 - header
+- verify
 
 ## License
 
