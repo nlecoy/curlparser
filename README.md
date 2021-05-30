@@ -1,5 +1,15 @@
 # cURL Parser
 
+<a href="https://github.com/nlecoy/curlparser/actions?query=workflow%3ATests" target="_blank">
+    <img src="https://github.com/nlecoy/curlparser/workflows/Tests/badge.svg" alt="Tests">
+</a>
+<a href="https://codecov.io/gh/nlecoy/curlparser" target="_blank">
+    <img src="https://img.shields.io/codecov/c/github/nlecoy/curlparser?color=%2334D058" alt="Coverage">
+</a>
+<a href="https://pypi.org/project/curlparser" target="_blank">
+    <img src="https://img.shields.io/pypi/v/curlparser?color=%2334D058&label=pypi%20package" alt="Package version">
+</a>
+
 Parse cURL commands returning object representing the request.
 
 ## How to install?
