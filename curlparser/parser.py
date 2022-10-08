@@ -20,7 +20,13 @@ ParsedCommand = namedtuple(
     ],
 )
 
-parser = argparse.ArgumentParser()
+
+class ArgumentParser(argparse.ArgumentParser):
+    def exit(self, status=2, message=None):
+        raise ValueError(message)
+
+
+parser = ArgumentParser()
 
 parser.add_argument("command")
 parser.add_argument("url")
