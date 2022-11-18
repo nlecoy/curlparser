@@ -17,6 +17,7 @@ ParsedCommand = namedtuple(
         "json",
         "header",
         "verify",
+        "compressed",
     ],
 )
 
@@ -26,6 +27,7 @@ parser.add_argument("command")
 parser.add_argument("url")
 parser.add_argument("-A", "--user-agent")
 parser.add_argument("-I", "--head")
+parser.add_argument("--compressed", action="store_true")
 parser.add_argument("-H", "--header", action="append", default=[])
 parser.add_argument("-b", "--cookie", action="append", default=[])
 parser.add_argument("-d", "--data", "--data-ascii", "--data-binary", "--data-raw", default=None)
@@ -103,4 +105,5 @@ def parse(curl_command: str) -> ParsedCommand:
         json=body,
         header=header,
         verify=parsed_args.insecure,
+        compressed=parsed_args.compressed,
     )
